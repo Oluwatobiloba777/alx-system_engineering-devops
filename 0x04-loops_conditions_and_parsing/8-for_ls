@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# it displays the contents of a directory
+contents_of_dir=$("ls")
+
+for i in $contents_of_dir ; do
+    echo "$i" | cut -d'-' -f2
+done
